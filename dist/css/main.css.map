@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\..\\src\\main.scss","main.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,yBAAA;ACCF","file":"main.css","sourcesContent":["body {\r\n  box-sizing: border-box;\r\n  background-color: #dc4242;\r\n}\r\n","body {\n  box-sizing: border-box;\n  background-color: #dc4242;\n}"]}
