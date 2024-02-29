@@ -1,12 +1,19 @@
+//  .. CSS variables
 // :root {
 //   --primary-color: #727272;
 //   --second-color: #ff652c;
 //   --text-color: #000;
 // }
 
-$primary-color: #727272;
-$second-color: #ff652c;
+$primary-color: #b4adad;
+$second-color: #da2d06;
 $text-color: #000;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
 
 body {
   box-sizing: border-box;
@@ -14,4 +21,18 @@ body {
   // color: var(--text-color);
   background: $primary-color;
   color: $text-color;
+  font-family: "Nunito", sans-serif;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
+
+  #{&}__paragraph {
+    font-weight: map-get($font-weights, bold);
+    color: $text-color;
+    &:hover {
+      color: $second-color;
+    }
+  }
 }
