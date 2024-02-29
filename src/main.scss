@@ -9,12 +9,6 @@ $primary-color: #b4adad;
 $second-color: #da2d06;
 $text-color: #000;
 
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
-
 body {
   box-sizing: border-box;
   // background-color: var(--primary-color);
@@ -24,15 +18,20 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
 .main {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 
   #{&}__paragraph {
     font-weight: map-get($font-weights, bold);
-    color: $text-color;
     &:hover {
-      color: $second-color;
+      color: rgb(193, 32, 11);
     }
   }
 }
