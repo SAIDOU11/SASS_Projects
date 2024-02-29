@@ -1,4 +1,17 @@
+// :root {
+//   --primary-color: #727272;
+//   --second-color: #ff652c;
+//   --text-color: #000;
+// }
+
+$primary-color: #727272;
+$second-color: #ff652c;
+$text-color: #000;
+
 body {
   box-sizing: border-box;
-  background-color: #dc4242;
+  // background-color: var(--primary-color);
+  // color: var(--text-color);
+  background: $primary-color;
+  color: $text-color;
 }
