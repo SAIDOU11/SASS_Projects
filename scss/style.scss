@@ -1,9 +1,5 @@
 @import "globals/_index.scss";
 
-@function weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
-}
-
 body {
   box-sizing: border-box;
   // background-color: var(--primary-color);
@@ -13,18 +9,12 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
-
 .main {
   width: 80%;
   margin: 0 auto;
 
   #{&}__paragraph {
-    font-weight: weight(regular);
+    font-weight: weight(medium);
     &:hover {
       color: rgb(193, 32, 11);
     }
