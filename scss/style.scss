@@ -1,6 +1,8 @@
-$primary-color: #b4adad;
-$second-color: #da2d06;
-$text-color: #000;
+@import "globals/_index.scss";
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
 
 body {
   box-sizing: border-box;
@@ -22,7 +24,7 @@ $font-weights: (
   margin: 0 auto;
 
   #{&}__paragraph {
-    font-weight: map-get($font-weights, bold);
+    font-weight: weight(regular);
     &:hover {
       color: rgb(193, 32, 11);
     }
