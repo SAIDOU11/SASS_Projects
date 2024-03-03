@@ -1,9 +1,17 @@
 @import "globals/_index.scss";
 
+$primary-color: #b4adad;
+$second-color: #da2d06;
+$text-color: #000;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
 body {
   box-sizing: border-box;
-  // background-color: var(--primary-color);
-  // color: var(--text-color);
   background: $primary-color;
   color: $text-color;
   font-family: "Nunito", sans-serif;
