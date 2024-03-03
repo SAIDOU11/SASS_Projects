@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   background: #b4adad;
-  color: #000;
+  color: #630808;
   font-family: "Nunito", sans-serif;
 }
 
@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 .main .main__paragraph {
-  font-weight: weight(medium);
+  font-weight: 700;
 }
 .main .main__paragraph:hover {
   color: rgb(193, 32, 11);
